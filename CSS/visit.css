@@ -1,0 +1,168 @@
+.wellcome-block p {
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.wellcome-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(-45deg, #4040a4, #0088a9, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 30vh;
+  overflow: scroll;
+  padding: 5%;
+}
+
+.wellcome-block::-webkit-scrollbar {
+  display: none;
+}
+
+/*Body layout*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.container-right,
+.container-left {
+  flex: 50%;
+  padding: 10px
+}
+
+#map {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(152, 152, 152);
+  margin-bottom: 10px;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 30px auto 0;
+}
+
+.container-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 80%;
+  margin: 0px auto 20px;
+}
+
+.container-form form fieldset>* {
+  margin: 5px 10px;
+}
+
+fieldset {
+  width: 80%;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+label,
+input {
+  display: inline-block;
+}
+
+label {
+  width: 30%;
+  text-align: right;
+}
+
+#error-handler{
+  width:100%;
+  text-align: center;
+  color:red;
+  display: none;
+}
+
+.button-container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.button-container-2{
+  margin:auto;
+}
+
+#button-clear {
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  vertical-align: middle;
+  border: 1px solid;
+  border-radius: 6px;
+  color: #24292e;
+  background-color: #e5e5e5;
+  border-color: #1b1f2326;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color, border-color;
+  text-decoration: none;
+}
+
+#button-clear:hover {
+  background-color: #ffffff;
+  border-color: #1b1f2326;
+  transition-duration: 0.1s;
+}
+
+#button-submit {
+  display: inline-block;
+  margin-right: 10px;
+  outline: 0;
+  cursor: pointer;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  vertical-align: middle;
+  border: 1px solid;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #2ea44f;
+  border-color: #1b1f2326;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color, border-color;
+  text-decoration: none;
+}
+
+#button-submit:hover {
+  background-color: #22883f;
+  border-color: #1b1f2326;
+  transition-duration: 0.1s;
+}
+
+/*Wellcome block background gradient animation*/
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

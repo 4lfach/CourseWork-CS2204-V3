@@ -1,0 +1,87 @@
+#about-header {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+/*Setting containers*/
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.container-center {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  padding: 10px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-right,
+.container-left {
+  width: 10vw;
+}
+
+/*Card styling*/
+.card {
+  padding: 1rem;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border-left: 0 solid #0088a9;
+  transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+}
+
+.card:hover {
+  padding-left: 0.5rem;
+  border-left: 0.5rem solid #0088a9;
+}
+
+.card> :first-child {
+  margin-top: 0;
+}
+
+.card> :last-child {
+  margin-bottom: 0;
+}
+
+/*Table styling*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  margin: 10px 0;
+  background-color: #999999;
+  border-radius: 5px;
+}
+
+td,
+th {
+  border: 1px solid #d0d0d0;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #d0d0d0;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #23d5ab;
+  color: white;
+}

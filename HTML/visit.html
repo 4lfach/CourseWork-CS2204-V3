@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Page - HKIU</title>
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="../CSS/visit.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="../JS/visit.js"></script>
+  <script type="text/javascript" src="https://personal.cs.cityu.edu.hk/~cs2204/2023/cw3cs2204.js"></script>
+</head>
+
+<body>
+  <div class="site-header">
+    <a href="home.html"><img src="../image/logo.png" class="header-img logo" width="400" height="100"
+        alt="logo image"></a>
+    <p>Hong Kong Industrial University</p>
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <header>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="apply.html">Apply</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="visit.html">Visit</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="contact.html">Contact</a>
+  </header>
+
+  <div class="wellcome-block">
+    <p>
+      We warmly welcome you to visit us at our Kowloon campus and experience our vibrant learning community. Our campus
+      is
+      located in
+      the Hong Kong Kowloon High-Tech Park, where we collaborate closely with institutes of the Chinese Academy of
+      Sciences.
+    </p>
+    <p>
+      During your visit, you can explore our world-class facilities, including the Protein Folding Science Center, Hong
+      Kong Advanced
+      Computing Equipment, Hong Kong Ultrafast Laser Facility, Hong Kong Electron-Positron Collider, and Hong Kong
+      Supercomputer Facility.
+      These facilities are available to our faculty, students, and researchers worldwide.
+    </p>
+    <p>
+      You will also have the chance to meet our renowned scholars and experts from home and abroad committed to
+      providing
+      students
+      with cutting-edge knowledge and skills in their respective fields. Our faculty members are recognized leaders in
+      their fields,
+      and their research has been published in prestigious journals such as Cell, Nature, and Science.
+    </p>
+    <p>
+      We hope you will come and visit us soon to experience firsthand the dynamic and innovative community at Hong Kong
+      Industrial University.
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="container-left">
+        <img src="../image/location.jpg" id="map" alt="location image">
+      </div>
+      <div class="container-right">
+        <h3>Location</h3>
+        <p>Address: Tat Chee Avenue, Kowloon, Hong Kong SAR</p>
+        <p>Tel: (852) 1234 5678</p>
+        <p>Fax: (852) 8765 4321</p>
+        <p>Email: visit@hkiu.edu.hk</p>
+      </div>
+    </div>
+    <div class="container-form">
+      <h3>Hong Kong Industrial University is having an open day on campus! Please make a reservation to visit our
+        campus!
+      </h3>
+
+      <form method="get" action="#" id="form-book" name="Form" onsubmit="return ReserveSeat()">
+        <fieldset>
+          <legend>Booking information:</legend>
+          <label for="book_date">Date:</label>
+          <input type="date" id="book_date" name="book_date" min="2023-09-26" max="2023-12-30">
+          <br>
+
+          <label for="book_time">Time:</label>
+          <select id="book_time" name="book_time">
+            <option value="book_time_1">8:30-9:30AM</option>
+            <option value="book_time_2">9:30-10:30AM</option>
+            <option value="book_time_3">10:30-11:30AM</option>
+            <option value="book_time_4">11:30-12:30AM</option>
+          </select>
+          <br>
+
+          <label for="book_seat_number">No.of Visitors: </label>
+          <input type="number" id="book_seat_number" name="book_seat_number" min="1" max="10">
+          <br>
+
+          <p id="error-handler">Something is wrong with you</p>
+          
+          <div class="button-container">
+            <div class="button-container-2">
+              <input type="submit" id="button-submit" value="Check availability of seats">
+              <input type="reset" id="button-clear" value="Reset">
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+
+    <div class="footer-distributed">
+      <div>
+        <p class="footer-links">
+          <a href="home.html">Home</a>
+          <a href="apply.html">Apply</a>
+          <a href="about.html">About</a>
+          <a href="program.html">Program</a>
+          <a href="visit.html">Visit</a>
+          <a href="contact.html">Contact</a>
+        </p>
+      </div>
+
+      <div class="footer-logo">
+        <img src="../image/footer_logo.png" alt="footer image">
+      </div>
+
+      <div class="footer-details">
+        <div>
+          <p>Tat Chee Avenue 420, Kowloon, Hong Kong SAR</p>
+        </div>
+
+        <div>
+          <p>Tel: (852) 1234 5678</p>
+          <p>Fax: (852) 8765 4321</p>
+        </div>
+
+        <div>
+          <p><a href="mailto:contact@hkiu.edu.hk">contact@hkiu.edu.hk</a></p>
+        </div>
+      </div>
+
+      <p class="footer-company-name">© CityU 2023 sources of images and text from Wikipedia Commons and Courtesy of Icon
+        pack by Icons8 -- designed by <a href="./design.html">Alfarabi</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>

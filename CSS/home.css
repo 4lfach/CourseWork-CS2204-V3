@@ -1,0 +1,87 @@
+/*Wellcome block styling*/
+.wellcome-block p {
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.wellcome-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(-45deg,#4040a4, #0088a9, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 30vh;
+  overflow: scroll;
+  padding: 10px 10px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.wellcome-block::-webkit-scrollbar{
+  display: none;
+}
+
+/*Body layout*/
+.container {
+  display: flex;
+  margin: 20px;
+}
+
+.container-right,
+.container-left {
+  flex: 50%;
+  padding: 10px
+}
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-left {
+  margin-right: 30px;
+  font-size: 14px;
+  border: 5px #0088a9 solid;
+  border-radius: 10px;
+}
+
+.container-left dl dd {
+  padding-left: 10px;
+}
+
+.container-left dl dt {
+  margin-top: 10px;
+}
+
+.container p {
+  margin-bottom: 10px;
+}
+
+/*Map image styling*/
+#map {
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(152, 152, 152);
+  margin-bottom: 10px;
+}
+
+/*Apply button styling*/
+#button-apply{
+  width: 70%;
+}
+
+/*Animation for wellcome block with gradient*/
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
